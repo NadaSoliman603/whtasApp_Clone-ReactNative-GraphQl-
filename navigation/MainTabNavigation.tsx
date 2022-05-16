@@ -4,7 +4,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import { MainTabParamList, TabOneParamList } from '../types';
 // import { createStackNavigator } from '@react-navigation/stack';
-import TabOneScreen from '../screens/TabOneScreen';
+import TabOneScreen from '../screens/ChatsScreen';
 import { Fontisto } from '@expo/vector-icons';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -63,7 +63,7 @@ function TabOneNavigator() {
             <TabOneStack.Screen
                 name="TabOneScreen"
                 component={TabOneScreen}
-                options={{ headerTitle: 'Tab One Title' }}
+                options={{ headerShown:false }}
             />
         </TabOneStack.Navigator>
     );
