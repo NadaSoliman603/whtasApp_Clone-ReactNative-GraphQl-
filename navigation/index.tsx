@@ -18,6 +18,7 @@ import MainTabNavigator from './MainTabNavigation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import { Route } from 'react-native-tab-view';
+import ContactsScreen from './../screens/ContactsScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -87,6 +88,25 @@ function RootNavigator() {
             </View>
           )
       })}
+      />
+
+    <Stack.Screen name="Contacts" component={ContactsScreen}
+        options={{
+          headerShadowVisible: false,
+          title: "Select Contact",
+          headerRight: () => (
+            <View style={{
+              flexDirection: 'row',
+              width: 60,
+              justifyContent: 'space-between',
+              marginRight: 10,
+              backgroundColor: Colors.light.tint,
+            }}>
+              <Octicons name="search" size={22} color={'white'} />
+              <MaterialCommunityIcons name="dots-vertical" size={22} color={'white'} />
+            </View>
+          )
+        }}
       />
     </Stack.Navigator>
   );

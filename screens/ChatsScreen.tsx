@@ -5,6 +5,7 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View, } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 import chat_Room_dymyData from "../assets/dumy_data/ChatRooms"
+import NewMessageButton from '../components/NewMessage';
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
@@ -15,6 +16,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
           <ChatListItem chatRoom={item} />
         )}
       />
+      <NewMessageButton/>
       </View>
   );
 }

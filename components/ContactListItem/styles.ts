@@ -2,26 +2,16 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    // flex:1,
-    flexDirection: 'column',
-    width: "100%",
-    // justifyContent: 'space-between',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     padding: 10,
+    flex:1
   },
   lefContainer: {
-    // width: "100%",
-    // flexDirection: 'row',
-    // flex:1,
-    // justifyContent: "space-between"
-    
+    flexDirection: 'row',
   },
   midContainer: {
-    // flex:1,
-    // backgroundColor:"red",
-    flexDirection:"row",
-    width:"65%",
-    justifyContent: "space-between"
-
+    justifyContent: 'space-around'
   },
   avatar: {
     width: 60,
@@ -33,14 +23,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
-  meaasge:{
-    paddingRight:30,
-    width:"70%"
-  },
   lastMessage: {
     fontSize: 16,
     color: 'grey',
-    // maximumValue:4
   },
   time: {
     fontSize: 14,
